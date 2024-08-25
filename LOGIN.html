@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      background-image: url("https://assets.hongkiat.com/uploads/ww-falling-stars-meteors-wallpapers/4k/original/18.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 15px; /* Added more rounded corners */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      width: 300px; /* Adjust the width as needed */
+    }
+
+    h1 {
+      text-align: center;
+      color: #008000; /* Green text */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 8px; /* Added more rounded corners */
+    }
+
+    button {
+      background-color: #008000; /* Green button */
+      color: white;
+      padding: 10px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 8px; /* Added more rounded corners */
+    }
+
+    button:hover {
+      background-color: #4CAF50;
+    }
+
+    .signup {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    a {
+      color: #008000; /* Green link */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="signup">
+      Not registered? <a href="#">Create an account</a>
+    </div>
+  </div>
+</body>
+</html>
